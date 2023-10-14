@@ -5,11 +5,24 @@
   scroll-behavior: smooth;
   transition: all 0.3s;
 }
+body{
+  overflow-y:scroll;
+  scroll-snap-type: y mandatory;
+
+}
+.sections{
+  scroll-snap-align:start;
+}
+::-webkit-scrollbar{
+  width:0px;
+}
 
 a {
   text-decoration: none;
   color: inherit;
 }
+
+/* ---------------- nav bar --------------- */
 
 header {
   width: 100%;
@@ -50,7 +63,23 @@ nav ul li {
 .logo {
   font-size: 3rem;
   font-weight: bold;
+  cursor:none;
 }
+.menuicon{
+  cursor:pointer;
+  margin-right: 20px;
+  animation: rotation 1s infinite;
+  
+}
+
+@keyframes rotation {
+  
+  to {
+     transform:rotate(360deg);
+     scale: 1.2 ;
+    }
+}
+
 .logo i {
   margin-left: 5px;
   font-size: 2rem;
@@ -69,8 +98,7 @@ nav ul li {
   width: 100%;
 }
 
-.left,
-.right {
+.left,.right {
   padding: 0px 40px;
 }
 .left {
@@ -131,43 +159,47 @@ nav ul li {
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
-  background: #000000;
-  color: wheat;
+  background: linear-gradient(23deg, purple, brown);
+  color: rgba(255, 255, 255, 0.849);
 }
 
 .projecthead {
   height: 100px;
   font-size: 65px;
   font-family: "Courier New", Courier, monospace;
-  padding: 10px;
+  padding: 10px 20px;
   /* margin: */
-  border-bottom: 2px solid whitesmoke;
+  border-bottom: 10px solid rgba(245, 245, 245, 0.61);
+  border-radius: 35%;
 }
 .projects {
   height: 400px;
-  width: 80%;
+  width: 65%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   overflow-x: hidden;
   overflow-y: scroll;
+  border-top: 2px solid rgba(201, 201, 201, 0.959);
+  border-radius: 4px;
+
 }
 .projects::-webkit-scrollbar {
   width: 8px;
 }
 .projects::-webkit-scrollbar-track {
   border-radius: 10px;
-  background: rgba(177, 174, 174, 0.678);
+  background: rgba(37, 37, 37, 0.178);
 }
 .projects::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: rgb(255, 255, 255);
+  background: rgba(219, 219, 219, 0.123);
 }
 .project {
   height: 400px;
   width: 350px;
-  margin: 10px;
+  margin: 30px;
   border: 2px solid white;
   border-radius: 5px;
   overflow: hidden;
@@ -201,12 +233,12 @@ nav ul li {
   justify-content: center;
 }
 .skillbox {
-  height: 75%;
-  width: 80%;
+  height: 70%;
+  width: 70%;
   padding: 10px 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
   /* border: 2px solid black; */
   border-radius: 10px;
@@ -215,24 +247,23 @@ nav ul li {
 .skillhead {
   color: white;
   font-size: 4rem;
-  padding: 15px;
+  padding: 5px;
+  margin-bottom:40px;
   text-shadow: -4px -4px 5px black;
   border-bottom: 8px solid white;
   border-radius: 40%;
+
 }
 
-.html,
-.css,
-.js {
+.html,.css,.js {
   /* background: silver; */
   width: 100%;
+  height: 100px;
   font-family: Impact, Haettenschweiler, "Arial Narrow";
-  padding: 4px 10px;
+  padding: 10px;
   font-size: 24px;
 }
-.htmlrange,
-.cssrange,
-.jsrange {
+.htmlrange,.cssrange,.jsrange {
   width: 100%;
   height: 10px;
   margin: 5px 0px;
@@ -250,9 +281,7 @@ nav ul li {
   height: 100%;
   background: white;
 }
-.htmlstatus,
-.cssstatus,
-.jsstatus {
+.htmlstatus,.cssstatus,.jsstatus {
   text-align: right;
   display: block;
 }
@@ -278,6 +307,8 @@ nav ul li {
   height: 100%;
   background: white;
 }
+
+/* --------------- progresh page --------------------- */
 
 .developing {
   height: 100vh;
