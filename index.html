@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css" integrity="sha512-/VYneElp5u4puMaIp/4ibGxlTd2MV3kuUIroR3NSQjS2h9XKQNebRQiyyoQKeiGE9mRdjSCIZf9pb7AVJ8DhCg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
 </head>
-<body>
+<body data-scroll-container>
     <div class="scroll-up-btn"><b>^</b>
         <i class="fas fa-angle-up"></i>
       </div>
@@ -33,7 +33,7 @@
       <!-- HOME SECTION -->
       <section class="home" id="home"><img src="https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_1280.jpg" class="bg"></img>
         <div class="max-width">
-          <div class="home-content">
+          <div class="home-content"  data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal">
             <div class="text-1">Hello, my name is</div>
             <div class="text-2"><span>Kuldeep</span></div>
             <div class="text-3">I'm a frontend developer<span class="typing"></span></div>
@@ -48,10 +48,10 @@
         <div class="max-width">
           <h2 class="title">About me</h2>
           <div class="about-content">
-            <div class="column left">
+            <div class="column left"  data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal">
               <img src="/img/me.png" alt="" />
             </div>
-            <div class="column right">
+            <div class="column right"  data-scroll data-scroll-speed="1" data-scroll-direction="horizontal">
               <div class="text">
                 My name is Kuldeep & <br> I want to become WEB DEVELOPER<span class="typing-2"></span>
               </div>
@@ -65,7 +65,7 @@
                 opens up various career opportunities in
                 information technology.
                 </p>
-              <a href="/img/resume.mht" target="_blank">Download Resume <i class="ri-download-2-line"></i></a>
+              <a  href="/img/resume.mht" target="_blank">Download Resume <i class="ri-download-2-line"></i></a>
             </div>
           </div>
         </div>
@@ -76,7 +76,7 @@
         <div class="max-width">
           <h2 class="title">My Work</h2>
           <div class="serv-content">
-            <div class="card">
+            <div class="card"  data-scroll data-scroll-speed="1" data-scroll-direction="horizontal">
               <div class="box">
                 <i class="ri-shirt-fill"></i>
                 <div class="text">Stitching Shop </div>
@@ -85,7 +85,7 @@
                 </a>
               </div>
             </div>
-            <div class="card">
+            <div class="card"  data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal">
               <div class="box">
                 <i class="ri-code-s-slash-fill"></i>
                 <div class="text">Code Runner </div>
@@ -100,11 +100,11 @@
       </section>
       
       <!-- SKILLS SECTION -->
-      <section class="skills" id="skills">
+      <section class="skills" id="skills" >
         <div class="max-width">
-          <h2 class="title">Skills</h2>
+          <h2 class="title"  data-scroll data-scroll-speed="4" data-scroll-direction="horizontal">Skills</h2>
           <div class="skills-content">
-            <div class="column left">
+            <div class="column left"  data-scroll data-scroll-speed="1" data-scroll-direction="horizontal">
               <div class="text">Skills & experiences.</div>
               <p>
                 I'm on a continuous journey of learning, driven by my passion for technology and coding. I
@@ -113,7 +113,7 @@
               </p>
               <a href="https://github.com/MrKuldeep01/" target="_blank">Github &nbsp;<i class="fab fa-github"></i></a>
             </div>
-            <div class="column right">
+            <div class="column right"  data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal">
               <div class="bars">
                 <div class="info">
                   <span>Html</span>
@@ -161,7 +161,7 @@
         <div class="max-width">
           <h2 class="title">Contact me</h2>
           <div class="contact-content">
-            <div class="column left" style=" width: 65%; ">
+            <div class="column left" style=" width: 65%; "  data-scroll data-scroll-speed="4" data-scroll-direction="horizontal">
               <div class="text">Let's Connect!</div>
               <p>
                 As a beginner frontend developer, I'm passionate about creating user-friendly web interfaces using HTML, CSS, and JavaScript, and I'm eager to learn and grow with every project.
@@ -200,7 +200,7 @@
       </section>
       
       <!-- FOOTER SECTION -->
-      <footer>
+      <footer >
         <span>Created By
           <a href="https://github.com/MrKuldeep01" target="_blank"> &nbsp;<i class="fab fa-github"></i>&nbsp; me !</a>
         </span>
